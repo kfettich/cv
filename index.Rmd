@@ -1,6 +1,6 @@
 ---
-title: "Nick Strayer's CV"
-author: Nick Strayer
+title: "Karla Fettich's CV"
+author: Karla Fettich
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -19,7 +19,7 @@ library(glue)
 library(tidyverse)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that are inserted for placement at the end
 links <- c()
@@ -49,14 +49,14 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+<!-- ![logo](communities.png){width=100%} -->
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
-  cat("View this CV online with links at _nickstrayer.me/cv_")
+  cat("View this CV online with links at _github.com/kfettich/cv_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/nstrayer/cv/raw/master/strayer_cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/kfettich/cv/raw/master/karlafettich_cv.pdf)")
 }
 ```
 
@@ -64,41 +64,27 @@ Contact {#contact}
 --------------------------------------------------------------------------------
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> kfettich at gmail dot com
+- <i class="fa fa-twitter"></i> kfettich
+- <i class="fa fa-github"></i> github.com/kfettich
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
-Language Skills {#skills}
+Skills {#skills}
 --------------------------------------------------------------------------------
-
 ```{r}
 build_skill_bars(skills)
 ```
 
-
-
-
-
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
-
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
-
-The source code is available at [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
-
-Last updated on `r Sys.Date()`.
-
-
-
-
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Karla Fettich, PhD {#title}
 --------------------------------------------------------------------------------
 
 
@@ -106,96 +92,78 @@ Nick Strayer {#title}
 cat(sanitize_links(intro_text))
 ```
 
-
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
+
+:::aside
+I speak several languages including German (native), Romanian (native), French (basic) and Spanish (basic).
+:::
 
 ```{r}
 print_section(position_data, 'education')
 ```
 
+Industry Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'industry_experience')
+```
 
-Research Experience {data-icon=laptop}
+\newpage 
+
+Research Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'research_positions')
 ```
 
-
-
-Industry Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
 ::: aside
-I have worked in a variety of roles ranging from journalist to software engineer to data scientist. I like collaborative environments where I can learn from my peers. 
+I have extensive experience with academic research, including clinical trials and studies using neuroimaging and psychophysiological data. 
 :::
-
-```{r}
-print_section(position_data, 'industry_positions')
-```
-
-<br>
-<br>
-<br>
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
-
-::: aside
-I am passionate about education. I believe that no topic is too complex if the teacher is empathetic and willing to think about new methods of approaching task. 
-:::
 
 ```{r}
 print_section(position_data, 'teaching_positions')
 ```
 
-
-Selected Data Science Writing {data-icon=chart-line}
+\newpage 
+Community Data Projects {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
-
 ::: aside
-I regularly blog about data science and visualization on my blog [LiveFreeOrDichotomize.](https://livefreeordichotomize.com/)
+I enjoy learning via hands-on projects that have a real and positive impact, and I seek to create opportunities to make this type of learning available to the wider community. 
 :::
 
 ```{r}
-print_section(position_data, 'data_science_writings')
+print_section(position_data, 'community_projects')
 ```
 
-
-
-Selected Press (About)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'about_me_press')
-```
-
-
-<br>
-<br>
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'by_me_press')
-```
-
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
+Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'academic_articles')
 ```
 
+Volunteer Work {data-icon=hands-helping}
+--------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'volunteer_work')
+```
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+
+[CV Source Code](https://github.com/kfettich-forks/cv).
+
+Last updated on `r Sys.Date()`.
 
 ```{r}
 if(PDF_EXPORT){
