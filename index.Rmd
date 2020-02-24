@@ -19,7 +19,7 @@ library(glue)
 library(tidyverse)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- TRUE
+PDF_EXPORT <- FALSE
 
 # Holds all the links that are inserted for placement at the end
 links <- c()
@@ -54,7 +54,7 @@ Aside
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
-  cat("View this CV online with links at _github.com/kfettich/cv_")
+  cat("View this CV online with links at _kfettich.github.io/cv/_")
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/kfettich/cv/raw/master/karlafettich_cv.pdf)")
 }
