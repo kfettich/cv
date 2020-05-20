@@ -130,7 +130,6 @@ Teaching Experience {data-icon=chalkboard-teacher}
 print_section(position_data, 'teaching_positions')
 ```
 
-\newpage 
 Community Data Projects {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
@@ -159,16 +158,12 @@ print_section(position_data, 'volunteer_work')
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
-
-[CV Source Code](https://github.com/kfettich-forks/cv).
-
 Last updated on `r Sys.Date()`.
 
 ```{r}
 if(PDF_EXPORT){
   cat("
-  
+
 Links {data-icon=link}
 --------------------------------------------------------------------------------
 
