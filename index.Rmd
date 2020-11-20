@@ -19,7 +19,7 @@ library(glue)
 library(tidyverse)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that are inserted for placement at the end
 links <- c()
@@ -110,7 +110,7 @@ Industry Experience {data-icon=suitcase}
 print_section(position_data, 'industry_experience')
 ```
 
-\newpage 
+<!-- \newpage  -->
 
 Research Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------

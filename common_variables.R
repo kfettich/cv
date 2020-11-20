@@ -15,7 +15,7 @@ skills <- tribble(
   "SPSS",               5,
   "Shiny Dashboards",   5,
   "Python",             3,
-  "NoSQL",              2,
-  "SQL",                2,
-  "Jupyter Notebooks",  3
+  "Jupyter Notebooks",  3,
+  "SQL",                4,
+  "NoSQL",              3
 )
