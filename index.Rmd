@@ -103,16 +103,14 @@ I speak several languages including German (native), Romanian (native), French (
 print_section(position_data, 'education')
 ```
 
-Industry Experience {data-icon=suitcase}
+Analytics & Data Science {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'industry_experience')
 ```
 
-<!-- \newpage  -->
-
-Research Experience {data-icon=suitcase}
+Research {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -123,14 +121,14 @@ print_section(position_data, 'research_positions')
 I have extensive experience with academic research, including clinical trials and studies using neuroimaging and psychophysiological data. 
 :::
 
-Teaching Experience {data-icon=chalkboard-teacher}
+Teaching {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'teaching_positions')
 ```
 
-Community Data Projects {data-icon=chart-line}
+Leadership {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -138,14 +136,7 @@ I enjoy learning via hands-on projects that have a real and positive impact, and
 :::
 
 ```{r}
-print_section(position_data, 'community_projects')
-```
-
-Selected Publications {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'academic_articles')
+print_section(position_data, 'leadership')
 ```
 
 Volunteer Work {data-icon=hands-helping}
@@ -155,15 +146,26 @@ Volunteer Work {data-icon=hands-helping}
 print_section(position_data, 'volunteer_work')
 ```
 
+Selected Publications {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'academic_articles')
+```
+
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
+
+Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+
+[CV Source Code](https://github.com/kfettich-forks/cv).
 
 Last updated on `r Sys.Date()`.
 
 ```{r}
 if(PDF_EXPORT){
   cat("
-
+  
 Links {data-icon=link}
 --------------------------------------------------------------------------------
 
