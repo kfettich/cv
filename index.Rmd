@@ -103,13 +103,25 @@ I speak several languages including German (native), Romanian (native), French (
 print_section(position_data, 'education')
 ```
 
-Analytics & Data Science {data-icon=suitcase}
+Professional Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'industry_experience')
 ```
 
+Leadership {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
+::: aside
+I enjoy learning via hands-on projects that have a real and positive impact, and I seek to create opportunities to make this type of learning available to the wider community. 
+:::
+
+```{r}
+print_section(position_data, 'leadership')
+```
+
+\newpage
 Research {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
@@ -128,16 +140,14 @@ Teaching {data-icon=chalkboard-teacher}
 print_section(position_data, 'teaching_positions')
 ```
 
-Leadership {data-icon=chart-line}
+\newpage
+Continuing Education {data-icon=graduation-cap}
 --------------------------------------------------------------------------------
 
-::: aside
-I enjoy learning via hands-on projects that have a real and positive impact, and I seek to create opportunities to make this type of learning available to the wider community. 
-:::
-
 ```{r}
-print_section(position_data, 'leadership')
+print_section(position_data, 'certificates')
 ```
+
 
 Volunteer Work {data-icon=hands-helping}
 --------------------------------------------------------------------------------
