@@ -1,10 +1,11 @@
 # Common non-csv data between CV and resume
 
 # Header with description of what is trying to be accomplished with this CV/Resume
-intro_text <- "I am enthusiastic about using my skills, expertise and time to make a lasting positive impact in the community. Professionally, my work seeks to improve healthcare for aging 
-individuals, and has [earned an Excellence in Technology Award for Dignity in Long-Term Care](https://www.mcknights.com/news/dunwoody-named-dignity-gold-award-winner/). Personally, I coordinate
-efforts to [increase diversity in the Philadelphia data science community](https://www.meetup.com/rladies-philly/), [reduce the number of homeless animals in the city](https://github.com/rladiesPHL/2019_datathon/) 
-and [facilitate care and recovery for those experiencing opioid addiction](https://github.com/CodeForPhilly/datahack2020)."
+intro_text <- "I am enthusiastic about using my skills, expertise and 10+ years of healthcare analytics experience to make a lasting positive impact in the community. 
+Professionally, I develop analytics and machine-learning approaches to improve health care solutions. Personally, I serve as a volunteer leader of 
+efforts to [increase diversity in the Philadelphia data science community](https://www.r-consortium.org/blog/2021/05/27/r-ladies-philly-building-our-online-community-during-the-pandemic) 
+and provide analytics insights to non-profit organizations in the greater Philadelphia area through [datathons](https://technical.ly/philly/2021/06/09/r-ladies-judge-accountability-datathon/) 
+and [software product development](https://technical.ly/philly/2020/04/30/code-for-philly-data-cleaning-project-paws-animals-analysis-volunteers/)."
 
 
 # Programming skills for skill bars visualization
@@ -14,8 +15,13 @@ skills <- tribble(
   "RMarkdown",          5,
   "SPSS",               5,
   "Shiny Dashboards",   5,
+  "SQL",                4,
+  "Excel",              4,
+  "Powerpoint",         4,
   "Python",             3,
   "Jupyter Notebooks",  3,
-  "SQL",                4,
-  "NoSQL",              3
+  "NoSQL",              3,
+  "Tableau",            2,
+  "SAS",                2 
+  
 )

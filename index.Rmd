@@ -75,7 +75,7 @@ Contact {#contact}
 <br>
 <br>
 
-Skills {#skills}
+Technical Skills {#skills}
 --------------------------------------------------------------------------------
 ```{r}
 build_skill_bars(skills)
@@ -103,12 +103,16 @@ I speak several languages including German (native), Romanian (native), French (
 print_section(position_data, 'education')
 ```
 
-Professional Experience {data-icon=suitcase}
+Healthcare Analytics Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'industry_experience')
+print_section(position_data, 'healthcare_analytics')
 ```
+
+::: aside
+I have extensive experience with academic research, including clinical trials and studies using neuroimaging and psychophysiological data. 
+:::
 
 Leadership {data-icon=chart-line}
 --------------------------------------------------------------------------------
@@ -120,18 +124,6 @@ I enjoy learning via hands-on projects that have a real and positive impact, and
 ```{r}
 print_section(position_data, 'leadership')
 ```
-
-\newpage
-Research {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'research_positions')
-```
-
-::: aside
-I have extensive experience with academic research, including clinical trials and studies using neuroimaging and psychophysiological data. 
-:::
 
 Teaching {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
