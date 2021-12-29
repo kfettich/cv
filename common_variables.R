@@ -12,16 +12,14 @@ and [software product development](https://technical.ly/philly/2020/04/30/code-f
 skills <- tribble(
   ~skill,               ~level,
   "R",                  5,
-  "RMarkdown",          5,
-  "SPSS",               5,
   "Shiny Dashboards",   5,
-  "SQL",                4,
-  "Excel",              4,
-  "Powerpoint",         4,
+  "SQL, NoSQL",                4,
+  "MS Office (Excel, PPT, etc.)",              4,
+  "Azure (Synapse, ML Studio)",      3,
   "Python",             3,
   "Jupyter Notebooks",  3,
-  "NoSQL",              3,
+  "PowerBI",            3,
   "Tableau",            2,
-  "SAS",                2 
+  "SAS, SPSS",          2 
   
 )

@@ -65,7 +65,6 @@ Contact {#contact}
 
 
 - <i class="fa fa-envelope"></i> kfettich at gmail dot com
-- <i class="fa fa-twitter"></i> kfettich
 - <i class="fa fa-github"></i> github.com/kfettich
 
 <br>
@@ -148,7 +147,7 @@ Volunteer Work {data-icon=hands-helping}
 print_section(position_data, 'volunteer_work')
 ```
 
-Selected Publications {data-icon=book}
+Papers & Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
