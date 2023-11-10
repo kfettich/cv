@@ -50,7 +50,8 @@ Aside
 
 
 <!-- ![logo](communities.png){width=100%} -->
-
+<i class="fa fa-envelope"></i> kfettich at gmail dot com
+<br>
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
@@ -60,24 +61,25 @@ if(PDF_EXPORT){
 }
 ```
 
-Contact {#contact}
+Skills {#mlai}
 --------------------------------------------------------------------------------
 
-
-- <i class="fa fa-envelope"></i> kfettich at gmail dot com
-- <i class="fa fa-github"></i> github.com/kfettich
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-Technical Skills {#skills}
+ML/AI/Stats {#mlai}
 --------------------------------------------------------------------------------
 ```{r}
-build_skill_bars(skills)
+build_skill_bars(ml_ai_skills)
+```
+
+Leadership {#leadership_skills}
+--------------------------------------------------------------------------------
+```{r}
+build_skill_bars(leadership_skills)
+```
+
+Technical {#tools}
+--------------------------------------------------------------------------------
+```{r}
+build_skill_bars(tech_tools)
 ```
 
 Main
@@ -94,10 +96,6 @@ cat(sanitize_links(intro_text))
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-:::aside
-I speak several languages including German (native), Romanian (native), French (basic) and Spanish (basic).
-:::
-
 ```{r}
 print_section(position_data, 'education')
 ```
@@ -110,10 +108,10 @@ print_section(position_data, 'healthcare_analytics')
 ```
 
 ::: aside
-I have extensive experience with academic research, including clinical trials and studies using neuroimaging and psychophysiological data. 
+I have 14 years of experience conducting academic research, including clinical trials and studies using neuroimaging and psychophysiological data. 
 :::
 
-Leadership {data-icon=chart-line}
+Community Involvement & Leadership {data-icon=hands-helping}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -123,25 +121,6 @@ I enjoy learning via hands-on projects that have a real and positive impact, and
 ```{r}
 print_section(position_data, 'leadership')
 ```
-
-Teaching {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'teaching_positions')
-```
-
-\newpage
-Continuing Education {data-icon=graduation-cap}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'certificates')
-```
-
-
-Volunteer Work {data-icon=hands-helping}
---------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'volunteer_work')
