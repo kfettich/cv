@@ -25,8 +25,7 @@ ml_ai_skills <- tribble(
   "Supervised Learning", 5,
   "Unsupervised Learning", 4,
   "Exploratory Data Mining", 4,
-  "Spark MLlib", 3,
-  "Causal Inference", 2
+  "Spark MLlib", 3
 )
 
 # leadership skill bars visualization
